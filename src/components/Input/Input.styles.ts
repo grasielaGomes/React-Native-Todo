@@ -10,6 +10,6 @@ export const styles = (hasFocus: boolean) =>
       borderWidth: 1,
       borderColor: hasFocus ? colors.purpleDark : colors.gray700,
       color: colors.gray100,
-      width: '90%',
+      width: '100%',
     },
   })
