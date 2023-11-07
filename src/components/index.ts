@@ -1,3 +1,6 @@
-export * from './Input/Input'
 export * from './Button/Button'
 export * from './Checkbox/Checkbox'
+export * from './Header/Header'
+export * from './Input/Input'
+export * from './TaskCard/TaskCard'
+export * from './TaskList/TaskList'
