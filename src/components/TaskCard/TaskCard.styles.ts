@@ -12,6 +12,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingLeft: 12,
     paddingRight: 4,
+    marginBottom: 8,
   },
   task: {
     flex: 1,
