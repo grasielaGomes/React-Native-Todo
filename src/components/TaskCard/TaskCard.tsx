@@ -24,7 +24,7 @@ export const TaskCard = ({ onDelete, onToggleDone, task }: TaskCardProps) => {
   return (
     <View style={styles.container}>
       <Pressable style={styles.task} onPress={handleToggleDone}>
-        <Checkbox isChecked={task.isDone} />
+        <Checkbox isChecked={task.isDone} onPress={handleToggleDone} />
         <Text style={[styles.text, task.isDone && styles.completed]}>
           {task.title}
         </Text>
