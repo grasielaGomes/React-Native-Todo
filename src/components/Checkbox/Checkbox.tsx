@@ -6,7 +6,7 @@ import { colors } from '../../styles/tokens'
 
 export interface CheckboxProps {
   isChecked: boolean
-  onPress: () => void
+  onPress?: () => void
 }
 
 export const Checkbox = ({ isChecked, onPress }: CheckboxProps) => {
