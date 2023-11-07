@@ -1,11 +1,11 @@
-import { Text, View } from 'react-native'
+import { Pressable, Text, View } from 'react-native'
 import Trash from 'phosphor-react-native/src/icons/Trash'
 import { Checkbox } from '../Checkbox/Checkbox'
 import { Button } from '../Button/Button'
 import { colors } from '../../styles/tokens'
 import { styles } from './TaskCard.styles'
 
-interface TaskProps {
+export interface TaskProps {
   id: string
   isDone: boolean
   title: string
@@ -23,12 +23,12 @@ export const TaskCard = ({ onDelete, onToggleDone, task }: TaskCardProps) => {
   const handleToggleDone = () => onToggleDone(task.id)
   return (
     <View style={styles.container}>
-      <View style={styles.task}>
-        <Checkbox isChecked={task.isDone} onPress={handleToggleDone} />
+      <Pressable style={styles.task} onPress={handleToggleDone}>
+        <Checkbox isChecked={task.isDone} />
         <Text style={[styles.text, task.isDone && styles.completed]}>
           {task.title}
         </Text>
-      </View>
+      </Pressable>
       <Button onPress={handleDelete} variant="ghost">
         <Trash size={20} color={colors.gray100} />
       </Button>
