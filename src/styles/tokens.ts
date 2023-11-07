@@ -12,3 +12,9 @@ export const colors = {
   purple: '#8284FA',
   purpleDark: '#5E60CE',
 }
+
+export const paddings = {
+  small: 8,
+  medium: 16,
+  large: 24,
+}
