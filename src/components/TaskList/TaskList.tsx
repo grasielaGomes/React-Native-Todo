@@ -1,4 +1,4 @@
-import { View } from 'react-native'
+import { FlatList, View } from 'react-native'
 import { styles } from './TaskList.styles'
 import { ListHeader } from './ListHeader/ListHeader'
 import { EmptyList } from './EmptyList/EmptyList'
@@ -25,16 +25,17 @@ export const TaskList = ({
       <ListHeader created={tasksCreated} completed={tasksCompleted} />
       {!hasTasks && <EmptyList />}
       {hasTasks && (
-        <View style={styles.list}>
-          {list.map((task) => (
+        <FlatList
+          data={list}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
             <TaskCard
-              key={task.id}
-              task={task}
+              task={item}
               onDelete={onDelete}
               onToggleDone={onToggleDone}
             />
-          ))}
-        </View>
+          )}
+        />
       )}
     </View>
   )

@@ -7,7 +7,4 @@ export const styles = StyleSheet.create({
     position: 'relative',
     top: -18,
   },
-  list: {
-    gap: 8,
-  },
 })
