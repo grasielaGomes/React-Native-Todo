@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
     minWidth: 32,
   },
   solid: {
-    padding: 18,
+    height: 54,
+    paddingHorizontal: 16,
     backgroundColor: colors.blueDark,
   },
   ghost: {

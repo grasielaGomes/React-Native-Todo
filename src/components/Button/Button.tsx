@@ -13,7 +13,7 @@ export const Button = ({
   variant,
 }: PropsWithChildren<ButtonProps>) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles[variant]}>
+    <TouchableOpacity onPress={onPress} style={[styles.button, styles[variant]]}>
       {children}
     </TouchableOpacity>
   )
