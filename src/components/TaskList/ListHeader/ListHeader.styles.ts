@@ -1,10 +1,9 @@
 import { StyleSheet } from 'react-native'
-import { colors, paddings } from '../../../styles/tokens'
+import { colors } from '../../../styles/tokens'
 
 export const styles = (hasTasks: boolean) =>
   StyleSheet.create({
     container: {
-      marginHorizontal: paddings.medium,
       paddingVertical: 18,
       flexDirection: 'row',
       alignItems: 'center',
