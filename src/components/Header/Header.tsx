@@ -2,7 +2,7 @@ import { Image, View } from 'react-native'
 import PlusCircle from 'phosphor-react-native/src/icons/PlusCircle'
 import { Input } from '../Input/Input'
 import { Button } from '../Button/Button'
-import { colors } from '../../styles/tokens'
+import { colors } from '@styles/tokens'
 import { styles } from './Header.styles'
 import { useHeader } from './useHeader'
 

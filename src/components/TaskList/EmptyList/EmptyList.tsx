@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native'
 import ClipboardText from 'phosphor-react-native/src/icons/ClipboardText'
-import { colors } from '../../../styles/tokens'
+import { colors } from '@styles/tokens'
 import { styles } from './EmptyList.styles'
 
 export const EmptyList = () => {

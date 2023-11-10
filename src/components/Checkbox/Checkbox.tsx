@@ -2,7 +2,7 @@ import React from 'react'
 import { Pressable, View } from 'react-native'
 import Check from 'phosphor-react-native/src/icons/Check'
 import { styles } from './Checkbox.styles'
-import { colors } from '../../styles/tokens'
+import { colors } from '@styles/tokens'
 
 export interface CheckboxProps {
   isChecked: boolean

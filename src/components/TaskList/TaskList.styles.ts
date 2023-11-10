@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { paddings } from '../../styles/tokens'
+import { paddings } from '@styles/tokens'
 
 export const styles = StyleSheet.create({
   container: {

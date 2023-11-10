@@ -2,7 +2,7 @@ import React from 'react'
 import { TextInput } from 'react-native'
 import type { TextInputProps } from 'react-native'
 import { styles } from './Input.styles'
-import { colors } from '../../styles/tokens'
+import { colors } from '@styles/tokens'
 import { useInput } from './useInput'
 
 export const Input = ({ ...props }: TextInputProps) => {

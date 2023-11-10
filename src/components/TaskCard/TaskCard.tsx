@@ -2,7 +2,7 @@ import { Pressable, Text, View } from 'react-native'
 import Trash from 'phosphor-react-native/src/icons/Trash'
 import { Checkbox } from '../Checkbox/Checkbox'
 import { Button } from '../Button/Button'
-import { colors } from '../../styles/tokens'
+import { colors } from '@styles/tokens'
 import { styles } from './TaskCard.styles'
 
 export interface TaskProps {

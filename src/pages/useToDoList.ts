@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { TaskProps } from '../components'
+import { TaskProps } from '@components/index'
 
 export const useTodoList = () => {
   const [newTasks, setNewTasks] = useState<TaskProps[]>([])

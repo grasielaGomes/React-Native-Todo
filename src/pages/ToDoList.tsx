@@ -1,5 +1,5 @@
 import { View } from 'react-native'
-import { Header, TaskList } from '../components'
+import { Header, TaskList } from '@components/index'
 import { useTodoList } from './useToDoList'
 
 export const ToDoList = () => {
