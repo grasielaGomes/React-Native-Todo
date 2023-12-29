@@ -6,7 +6,8 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
-      "@styles/*": ["./src/styles/*"],
+      "@storage": ["src/storage/index"],
+      "@styles/*": ["./src/styles/*"]
     }
   }
 }
